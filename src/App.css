@@ -51,6 +51,14 @@ a {
   letter-spacing: 2px;
   font-family: var(--TitleFont);
 }
+.section-subtitle {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: -1.3rem;
+  font-family: var(--LogoFont);
+  letter-spacing: 1.3px;
+  margin-bottom: 4rem;
+}
 @media screen and (min-width: 730px) {
   .section-center {
     width: 95%;
@@ -86,15 +94,26 @@ a {
   --MainTransition: 0.3s ease all;
 }
 /* End Variables */
+.section-division {
+  background-color: var(--FontGrayColor);
+  height: 1px;
+  width: 25%;
+  margin: 0 auto;
+}
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
-/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
-/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
-/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+/* ::::::::::::::::: Loading ::::::::::::::::::  */
+.loading-sect {
+  min-height: 55vh;
+}
+/* End Loading*/
 
 /* ::::::::::::::::: Banner ::::::::::::::::::  */
 .banner-sect {
   height: 95vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(10, 0, 1, 0.59)),
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(10, 0, 1, 0.7)),
     url('https://firebasestorage.googleapis.com/v0/b/nasa-fun.appspot.com/o/banner1.jpg?alt=media&token=bcf8695d-a19a-4e0e-9eb8-e3b3c59ac435')
       center/cover fixed no-repeat;
   clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0 97%, 0 0);
@@ -143,7 +162,8 @@ a {
 
 /* ::::::::::::::::: About ::::::::::::::::::  */
 .about-sect {
-  min-height: 60vh;
+  position: relative;
+  margin-bottom: 3rem;
 }
 .about-info {
   width: 70%;
@@ -169,14 +189,61 @@ a {
   font-family: var(--LogoFont);
   font-style: italic;
 }
-
 /* End About */
 
-/* ::::::::::::::::: Banner ::::::::::::::::::  */
-/* End Banner */
-
-/* ::::::::::::::::: Banner ::::::::::::::::::  */
-/* End Banner */
+/* ::::::::::::::::: APOD ::::::::::::::::::  */
+.apod-sect {
+  min-height: 50vh;
+  margin-bottom: 4rem;
+}
+.apod-container {
+  width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  justify-content: center;
+}
+.apod-img-container {
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--CtaColor);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.apod-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.apod-info {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1.2rem 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.apod-date {
+  color: var(--FontGrayColor);
+  letter-spacing: 1.2px;
+  font-size: 0.9rem;
+}
+.apod-title {
+  font-family: var(--TitleFont);
+  color: black;
+  letter-spacing: 1.3px;
+  margin-bottom: 1.4rem;
+}
+.apod-explanation {
+  font-family: var(--TextsFont);
+  letter-spacing: 1.1px;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+/* End APOD */
 
 /* ::::::::::::::::: Banner ::::::::::::::::::  */
 /* End Banner */
