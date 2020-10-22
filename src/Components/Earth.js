@@ -9,7 +9,6 @@ const Earth = () => {
           alt='earth-hand'
           className='earth-info-img'
         />
-
         <div className='earth-text'>
           <p className='earth-desc'>
             EARTH, OUR HOME planet, is a world unlike any other. The third
