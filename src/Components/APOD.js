@@ -49,8 +49,10 @@ const APOD = () => {
           )}
 
           <div className='apod-info'>
-            <p className='apod-date'>{date}</p>
-            <h3 className='apod-title'>{title}</h3>
+            <div className='apod-info-title'>
+              <p className='apod-date'>{date}</p>
+              <h3 className='apod-title'>{title}</h3>
+            </div>
             <p className='apod-explanation'>{explanation}</p>
           </div>
         </div>
