@@ -163,7 +163,7 @@ a {
 /* ::::::::::::::::: About ::::::::::::::::::  */
 .about-sect {
   position: relative;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 .about-info {
   width: 70%;
@@ -198,17 +198,18 @@ a {
 .earth-info-container {
   width: 80%;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
 }
 .earth-info-img {
-  width: 40rem;
+  width: 25rem;
+  justify-self: left;
 }
 .earth-text {
   width: 100%;
   text-align: center;
+  margin-top: -4rem;
 }
 .earth-desc {
   font-family: var(--TextsFont);
