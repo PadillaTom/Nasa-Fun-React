@@ -216,6 +216,8 @@ a {
   letter-spacing: 1.2px;
   font-size: 1.2rem;
   color: var(--CtaColor);
+  width: 80%;
+  margin: 0 auto;
 }
 .earth-desc2 {
   font-family: var(--TextsFont);
@@ -223,6 +225,8 @@ a {
   font-size: 1.2rem;
   color: var(--CtaColor);
   margin-top: 1rem;
+  width: 80%;
+  margin: 0 auto;
 }
 /* End Banner */
 
