@@ -42,7 +42,7 @@ const APOD = () => {
               title='video'
               src={url}
               gesture='media'
-              allow='encrypted-media'
+              allow='autoplay'
               allowFullScreen='false'
               className='apod-img'
             ></iframe>
