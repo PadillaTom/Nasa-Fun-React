@@ -1,4 +1,5 @@
 import React from 'react';
+import MarsPhotos from './MarsPhotos';
 
 const Mars = () => {
   return (
@@ -7,7 +8,9 @@ const Mars = () => {
         <h2>Mars</h2>
       </div>
       <div className='section-subtitle'>The Mythical Red Planet.</div>
-      <div className='section-center'></div>
+      <div className='section-center'>
+        <MarsPhotos></MarsPhotos>
+      </div>
     </section>
   );
 };
