@@ -297,6 +297,37 @@ a {
   margin-bottom: 2rem;
   color: var(--FontGrayColor);
 }
+.photo-explanation {
+  font-family: var(--LogoFont);
+  letter-spacing: 2px;
+  font-size: 1.4rem;
+  text-align: center;
+  width: 90%;
+  margin: 2rem auto;
+  margin-bottom: 2rem;
+  color: var(--FontGrayColor);
+}
+.sol-selection {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+}
+.sol-label {
+  font-size: 1.7rem;
+  font-family: var(--TitleFont);
+  color: var(--GrayColor);
+}
+.sol-input {
+  padding: 0.7rem 2rem;
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-size: 1.4rem;
+  border-bottom: 1px solid black;
+  background: transparent;
+}
 /* End Mars Page*/
 
 /* ::::::::::::::::: Rover Selection :::::::::::::::::::  */
@@ -304,7 +335,7 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 .single-rover {
   width: 100%;
