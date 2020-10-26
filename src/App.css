@@ -316,18 +316,19 @@ a {
   font-size: 1.7rem;
   font-family: var(--TitleFont);
   color: var(--GrayColor);
+  margin-top: 1rem;
 }
 .sol-input {
   padding: 0.7rem 2rem;
   width: 40%;
-  margin: 0 auto;
+  margin: 1rem auto;
   text-align: center;
   border: none;
   outline: none;
   font-size: 1.4rem;
-  border-bottom: 1px solid black;
-  background: transparent;
-  margin-bottom: 2rem;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 15px rgba(123, 122, 122, 0.59);
 }
 /* End Mars Page*/
 
@@ -347,7 +348,7 @@ a {
   transition: var(--MainTransition);
 }
 .single-rover:hover {
-  box-shadow: 1px 1px 8px #1a1a1ac1;
+  box-shadow: 1px 1px 12px #000000dc;
 }
 .rover-img {
   width: 100%;
