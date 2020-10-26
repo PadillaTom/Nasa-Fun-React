@@ -57,7 +57,7 @@ a {
   margin-top: -1.3rem;
   font-family: var(--LogoFont);
   letter-spacing: 1.3px;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 @media screen and (min-width: 730px) {
   .section-center {
@@ -237,12 +237,13 @@ a {
 }
 .apod-container {
   width: 80%;
-  height: 28rem;
+  height: 22rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   justify-content: center;
+  max-width: 1200px;
 }
 .apod-img-container {
   width: 100%;
@@ -285,7 +286,7 @@ a {
 
 /* ::::::::::::::::: Mars Page ::::::::::::::::::  */
 .mars-sect {
-  min-height: 100vh;
+  min-height: 50vh;
 }
 .selection-text {
   font-family: var(--LogoFont);
@@ -300,9 +301,9 @@ a {
 .photo-explanation {
   font-family: var(--LogoFont);
   letter-spacing: 2px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: center;
-  width: 90%;
+  width: 70%;
   margin: 0 auto;
   margin-bottom: 2rem;
   color: var(--FontGrayColor);
@@ -316,10 +317,9 @@ a {
   font-size: 1.7rem;
   font-family: var(--TitleFont);
   color: var(--GrayColor);
-  margin-top: 1rem;
 }
 .sol-input {
-  padding: 0.7rem 2rem;
+  padding: 0.5rem 2rem;
   width: 40%;
   margin: 1rem auto;
   text-align: center;
@@ -338,6 +338,7 @@ a {
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   margin-bottom: 3rem;
+  max-width: 1200px;
 }
 .single-rover {
   width: 100%;
@@ -352,16 +353,18 @@ a {
 }
 .rover-img {
   width: 100%;
-  height: 12rem;
+  height: 14rem;
   object-fit: cover;
 }
 .rovers-info {
   text-align: center;
-  width: 90%;
+  width: 100%;
+  height: 100%;
   margin: 0.5rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: white;
 }
 .rover-name {
   font-family: var(--TitleFont);
@@ -369,22 +372,22 @@ a {
   font-size: 1.6rem;
 }
 .rover-desc {
-  width: 95%;
+  width: 85%;
   margin: 0 auto;
   font-family: var(--TextsFont);
   letter-spacing: 1.1px;
   font-size: 0.9rem;
-  padding: 1rem 0rem;
+  padding: 0.7rem 0rem;
 }
 /* End Rover Selection */
 
 /* ::::::::::::::::: Display Photos ::::::::::::::::::  */
 .photos-container {
-  width: 95%;
+  width: 85%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  gap: 3rem;
   margin-bottom: 5rem;
 }
 .current-display {
@@ -397,12 +400,12 @@ a {
 .camera-photo {
   width: 100%;
   height: 15rem;
-  border: 2px solid black;
+  border: 2px solid rgb(36, 36, 36);
   border-radius: 1rem;
 }
 .camera-name {
   font-family: var(--TitleFont);
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: var(--GrayColor);
   letter-spacing: 1.3px;
   text-align: center;
@@ -417,10 +420,9 @@ a {
   letter-spacing: 2px;
 }
 .no-sol-photos {
-  font-size: 1.4rem;
-  color: black;
+  font-size: 1.2rem;
+  color: red;
   letter-spacing: 1.6px;
-  width: 100%;
   white-space: nowrap;
 }
 /* End Display Photos */
