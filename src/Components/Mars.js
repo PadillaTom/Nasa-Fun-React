@@ -1,7 +1,10 @@
 import React from 'react';
-import MarsPhotos from './MarsPhotos';
+
+import RoverSelection from './RoverSelection';
 
 const Mars = () => {
+  // Request by name:
+
   return (
     <section className='section mars-sect'>
       <div className='section-title'>
@@ -9,7 +12,10 @@ const Mars = () => {
       </div>
       <div className='section-subtitle'>The Mythical Red Planet.</div>
       <div className='section-center'>
-        <MarsPhotos></MarsPhotos>
+        <h5 className='selection-text'>Select on of the following Rovers:</h5>
+        <div className='rovers-container'>
+          <RoverSelection></RoverSelection>
+        </div>
       </div>
     </section>
   );
