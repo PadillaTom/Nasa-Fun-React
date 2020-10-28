@@ -46,7 +46,7 @@ const MarsPhotos = ({ nameForApi, solDay }) => {
             <React.Fragment>
               <img
                 src={frontPhotos?.img_src}
-                alt='No Photo of Such SOL'
+                alt='Front'
                 className='camera-photo'
               />
               <p className='camera-name'>Front Hazard Avoidance Camera</p>
@@ -65,14 +65,14 @@ const MarsPhotos = ({ nameForApi, solDay }) => {
               {' '}
               <img
                 src={rearPhotos?.img_src}
-                alt='No Photo of Such SOL'
+                alt='Rear'
                 className='camera-photo'
               />
               <p className='camera-name'> Rear Hazard Avoidance Camera</p>
               <p className='earth-date'>{rearPhotos?.earth_date}</p>
             </React.Fragment>
           ) : (
-            <h2></h2>
+            <h2>{null}</h2>
           )}
         </div>
       </article>

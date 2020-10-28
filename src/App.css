@@ -139,6 +139,9 @@ a {
 }
 .banner-info-img {
   width: 25rem;
+  /* For Gsap */
+  opacity: 0;
+  transform: scale(40);
 }
 /* Typewritter Animation */
 @keyframes typing {
@@ -191,7 +194,7 @@ a {
 }
 /* End About */
 
-/* ::::::::::::::::: Banner ::::::::::::::::::  */
+/* ::::::::::::::::: Earth ::::::::::::::::::  */
 .earth-sect {
   min-height: 50vh;
 }
@@ -201,10 +204,14 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-top: 3rem;
 }
 .earth-info-img {
   width: 25rem;
   justify-self: left;
+  /* For Animations */
+  opacity: 0;
+  transform: translateX(-100%);
 }
 .earth-text {
   width: 100%;
@@ -228,7 +235,7 @@ a {
   width: 80%;
   margin: 0 auto;
 }
-/* End Banner */
+/* End Earth */
 
 /* ::::::::::::::::: APOD ::::::::::::::::::  */
 .apod-sect {

@@ -1,10 +1,24 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
+import { TweenMax, Bounce } from 'gsap';
 
 const Earth = () => {
+  let earthImage = useRef(null);
+
+  useEffect(() => {
+    TweenMax.to(earthImage, 2.5, {
+      opacity: 1,
+      x: 0,
+      ease: Bounce.easeOut,
+    });
+  }, []);
+
   return (
     <section className='section earth-sect'>
       <div className='earth-info-container'>
         <img
+          ref={(el) => {
+            earthImage = el;
+          }}
           src='https://firebasestorage.googleapis.com/v0/b/nasa-fun.appspot.com/o/earth.png?alt=media&token=2820b08f-31f6-4d12-bfbb-7117b167bcbd'
           alt='earth-hand'
           className='earth-info-img'
